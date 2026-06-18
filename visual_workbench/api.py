@@ -40,7 +40,7 @@ def create_app(settings: WorkbenchSettings | None = None) -> FastAPI:
             "repo_root": str(repo_root),
             "subprojects": subprojects,
             "artifact_roots": [str(root) for root in settings.resolved_artifact_roots()],
-            "submodule_note": "visual-workbench is local until a fourth-submodule remote is configured.",
+            "submodule_note": "visual-workbench is managed as the fourth Git submodule on branch main.",
         }
 
     @app.get("/api/artifacts")
