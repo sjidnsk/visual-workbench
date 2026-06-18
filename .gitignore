@@ -1,0 +1,14 @@
+# Python test/runtime caches.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Frontend dependencies and generated artifacts.
+web/node_modules/
+web/dist/
+web/tsconfig.tsbuildinfo
+
+# Local environment files.
+.env
+.env.*
